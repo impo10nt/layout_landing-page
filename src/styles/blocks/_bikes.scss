@@ -1,0 +1,45 @@
+@use '../utils/mixins' as *;
+
+
+
+.bikes-compare {
+  display: flex;
+  flex-direction: column;
+
+  @include content-padding-inline;
+  @include on-tablet;
+
+  &__intro {
+    margin-top: 60px;
+    margin-bottom: 92px;
+    margin-inline: 0;
+  }
+
+   &__info {
+    margin-top: 32px;
+    font-size: 1.5rem;
+    line-height: 140%;
+    font-weight: 500;
+  }
+}
+
+.bike-card {
+ 
+
+  &__heading {
+    margin-top: 32px;
+  } 
+  
+  &__description {
+    margin-top: 8px;
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  &__price {
+    display: inline-block;
+   margin-top: 16px;
+  }
+}
+

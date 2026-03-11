@@ -1,5 +1,9 @@
+<!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html
+  class="document"
+  lang="en"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -15,8 +19,229 @@
       src="src/scripts/main.js"
       defer
     ></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <!-- #endregion -->
   <body>
-    <h1>Landing Page</h1>
+    <!-- #region header -->
+    <header class="header header--menu-open">
+      <aside class="header__aside">
+        <nav class="navbar navbar__menu">
+          <div class="top-bar top-bar--menu">
+            <a
+              href="#"
+              class="logo"
+            >
+              <img
+                src="src/images/MyBiKE-dark.svg"
+                alt="MyBike logo"
+              />
+            </a>
+            <a class="icon icon--close">
+              <img
+                src="src/images/Icon-Close.svg"
+                alt="menu"
+                class="header__img"
+              />
+            </a>
+          </div>
+
+          <ul class="pages">
+            <li class="navbar__li">
+              <a href="#">Home</a>
+            </li>
+            <li class="navbar__li">
+              <a href="#info">About Us</a>
+            </li>
+            <li class="navbar__li">
+              <a href="#compare">Compare Bikes</a>
+            </li>
+            <li class="navbar__li">
+              <a href="#details">Details</a>
+            </li>
+            <li class="navbar__li">
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-bottom">
+          <a
+            class="tel"
+            href="tel:+1 234 5555-55-55"
+          >
+            +1 234 5555-55-55
+          </a>
+          <a
+            href="#"
+            class="test-ride"
+          >
+            Book a test ride
+          </a>
+        </div>
+      </aside>
+
+      <div class="top-bar top-bar__menu">
+        <a
+          href="#"
+          class="logo"
+        >
+          <img
+            src="src/images/Logo.svg"
+            alt="MyBike logo"
+          />
+        </a>
+        <div class="header__menu">
+          <a class="icon icon--contacts">
+            <img
+              src="src/images/Icon-Phone-call.svg"
+              alt="contacts"
+              class="icon__img"
+            />
+          </a>
+          <a class="icon icon--burger">
+            <img
+              src="src/images/Icon-Burger-menu.svg"
+              alt="menu"
+              class="icon__img"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- #endregion -->
+    <section class="hero">
+      <h1 class="hero-heading">Take the Streets</h1>
+    </section>
+
+    <main class="main">
+      <section
+        id="compare"
+        class="bikes-compare bikes__card"
+      >
+        <div class="bikes-compare__intro">
+          <h2 class="bikes-compare__title heading">Move Free</h2>
+          <p class="bikes-compare__info">
+            Shift your ride, not gears. Find the fastest way to move in the city
+            as the bike adapts intuitively to power the speed you need.
+          </p>
+        </div>
+
+        <h2 class="heading">Compare Bikes</h2>
+
+        <article class="bike-card">
+          <img
+            src="./src/images/Sporty.jpg"
+            alt="Sporty Bike Image"
+            
+          />
+          <h3 class="bike-card__heading heading--bold">Sporty 4</h3>
+          <p class="bike-card__description">
+            The iconic frame brought to a new performance height as a sporty,
+            active ride.
+          </p>
+          <span
+            itemprop="price"
+            class="bike-card__price heading--bold"
+          >
+            $ 2 590
+          </span>
+        </article>
+
+        <article class="bike-card">
+          <img
+            src="./src/images/rideInTown.jpg"
+            alt="Ride in Town Bike Image"
+          />
+          <h3 class="bike-card__heading heading--bold">Ride in town ST</h3>
+          <p class="bike-card__description">
+            An open frame for an upright riding position as the most comfortable
+            ride in town.
+          </p>
+          <span
+            itemprop="price"
+            class="bike-card__price heading--bold"
+          >
+            $ 2 590
+          </span>
+        </article>
+
+        <article class="bike-card">
+          <img
+            src="./src/images/agileRide.png"
+            alt="Agile Ride 3 bike Image"
+          />
+          <h3 class="bike-card__heading heading--bold">Agile ride 3</h3>
+          <p class="bike-card__description">
+            The lightweight frame that has earned its street tread as a sleek,
+            agile ride.
+          </p>
+          <span
+            itemprop="price"
+            class="bike-card__price heading--bold"
+          >$ 2 090</span>
+        </article>
+      </section>
+
+      <section
+        id="details"
+        class="details"
+      >
+        <h2 class="heading"></h2>
+
+        <article class="bikes-details">
+          <img
+            src=""
+            alt=""
+          />
+          <img
+            src=""
+            alt=""
+          />
+          <h3 class="heading heading--bold"></h3>
+          <p></p>
+        </article>
+
+        <article class="bikes-details">
+          <img
+            src=""
+            alt=""
+          />
+          <img
+            src=""
+            alt=""
+          />
+          <h3 class="heading heading--bold"></h3>
+          <p></p>
+        </article>
+
+        <article class="bikes-details">
+          <img
+            src=""
+            alt=""
+          />
+          <img
+            src=""
+            alt=""
+          />
+          <h3 class="heading heading--bold"></h3>
+          <p></p>
+        </article>
+        <button class="btn">Explore</button>
+      </section>
+      section.contacts
+    </main>
+    <div class="box"></div>
   </body>
 </html>

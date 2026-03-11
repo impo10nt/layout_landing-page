@@ -1,3 +1,154 @@
-body {
-  margin: 0;
-}
+@use 'reset';
+@use './blocks/base';
+@use './blocks/icon';
+@use './blocks/button';
+@use './blocks/header';
+@use './blocks/top-bar';
+@use './blocks/navbar';
+@use './blocks/hero';
+@use './blocks/bikes';
+
+
+// #region header
+
+// .heading {
+//   font-weight: 500;
+
+//   font-size: 2rem;
+//   line-height: 2rem;
+// }
+
+// .logo {
+//   width: 130px;
+//   height: 68px;
+// }
+
+// .icon {
+// height: 32px;
+// width: 32px;
+// }
+
+// .heading-bold {
+//   font-weight: 700;
+//   font-size: 1.5rem;
+//   line-height: 140%;
+// }
+
+// .top-bar {
+//    display: flex;
+//   padding: 24px 20px;
+//   width: 100%;
+//   justify-content: space-between;
+// }
+
+// .header {
+//   position: absolute;
+//   width: 100%;
+  
+// }
+
+// .header__menu {
+//   display: flex;
+//   gap: 24px;
+// }
+// #endregion
+
+// #region aside
+
+// .nav--menu {
+//   margin-bottom: 30px;
+// }
+
+// .header__aside {
+// display: none;
+// }
+
+// .aside--active {
+//   display: block;
+//   position: absolute;
+//   background-color: #C2C2C2;
+//   height: 85vh;
+//   width: 100%;
+//   color: #1D1D1D;
+// }
+
+// // .aside__items {
+// //   display: flex; 
+// //   justify-content: space-between;
+// //   padding: 24px 20px;
+// // }
+
+// .pages {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 0 20px;
+//   gap: 32px;
+// }
+
+// .nav-li {
+//   font-weight: 600;
+//   font-size: 1.5rem;
+//   line-height: 1.5rem;
+//   text-transform: uppercase;
+//   letter-spacing: 2px;
+// }
+
+// .nav-bottom {
+//   padding: 0 20px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 12px;
+// }
+
+// .test-ride {
+//   display: inline-block;
+//   font-size: 1rem;
+//   line-height: 1.75rem;
+//   position: relative;
+//   align-self: flex-start;
+// }
+
+// .tel {
+//   font-size: 1rem;
+//   line-height: 1.25rem;
+// }
+
+// .test-ride::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 1px;
+//   border-radius: 1px;
+//   background-color: #000;
+// }
+
+// #endregion
+
+// #region hero
+// .hero {
+//   background-image: url(/src/images/mikkel-bech-yjAFnkLtKY0-unsplash\ 2.svg);
+//   min-height: 70vh;
+//   width: 100%;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: top;
+// display: flex;
+// justify-content: center;
+// flex-direction: column;
+// justify-content: end;
+// align-items: stretch;
+// }
+
+// .hero-heading {
+//   display: block;
+//   width: 100%; /* Занимаем всю ширину */
+//   text-align: center; 
+//   font-size: 2.25rem;
+//   font-weight: 700;
+//   line-height: 100%;
+//   margin-bottom: 88px;
+// }
+// #endregion
+

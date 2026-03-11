@@ -1,0 +1,21 @@
+@use '../utils/mixins' as *;
+
+.top-bar {
+  position: absolute;
+  display: flex;
+  padding: 24px 0;
+
+  @include content-padding-inline;
+
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--menu {
+    position: static;
+  }
+}
