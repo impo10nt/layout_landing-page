@@ -1,3 +1,28 @@
+@use '../utils/mixins' as *;
+@use '../utils/var' as *;
+
 .btn {
-    z-index: 1;
+  z-index: 1;
+}
+
+.base-button {
+  display: inline-block;
+  width: 278px;
+  height: 56px;
+  border-radius: $base-radius;
+
+  background-color: #fff;
+  color: $accent-gray;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 56px;
+
+  @include on-tablet {
+    width: 392px;
+  }
+
+  @include on-desktop {
+    width: 324px;
+  }
 }

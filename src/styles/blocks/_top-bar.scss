@@ -1,21 +1,34 @@
 @use '../utils/mixins' as *;
+@use '../utils/var' as *;
 
 .top-bar {
   position: absolute;
+  right: 0;
+  left: 0;
   display: flex;
-  padding: 24px 0;
+  padding: $p-6 0;
+  margin: 0 auto;
 
   @include content-padding-inline;
 
-  width: 100%;
+  @include on-tablet {
+    padding: $p-9 72px;
+  }
+
+  @include on-desktop {
+    padding: $p-9 120px;
+  }
+
   justify-content: space-between;
   align-items: center;
 
-  &--hidden {
-    display: none;
-  }
+  &__img {
+    height: 24px;
+    width: 24px;
 
-  &--menu {
-    position: static;
+    @include on-tablet {
+      height: 32px;
+      width: 32px;
+    }
   }
 }
