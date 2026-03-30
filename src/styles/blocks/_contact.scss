@@ -48,6 +48,16 @@
     margin-bottom: $p-4;
     background-color: #fff;
     padding-left: $p-4;
+    color: #292929;
+
+    &:hover::placeholder {
+      color: #292929;
+      transition: color 0.3s;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
 
     @include on-tablet {
       width: 288px;
@@ -58,13 +68,13 @@
     }
   }
 
-  &__massage {
+  &__message {
     width: 278px;
     height: 148px;
     border-radius: 16px;
     padding: 14px 0 0 16px;
     margin-bottom: $p-8;
-
+    color: #292929;
     background-color: #fff;
 
     @include on-tablet {
