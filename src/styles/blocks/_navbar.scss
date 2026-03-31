@@ -21,18 +21,18 @@
 }
 
 .header-aside {
-  height: 568px;
+  height: 100vh;
 
   background-color: #c2c2c2;
   color: $dark-text-color;
 
-  @include on-tablet {
-    height: 630px;
-  }
+  // @include on-tablet {
+  //   height: 630px;
+  // }
 
-  @include on-desktop {
-    height: 712px;
-  }
+  // @include on-desktop {
+  //   height: 712px;
+  // }
 
   &__pages {
     margin-top: 110px;

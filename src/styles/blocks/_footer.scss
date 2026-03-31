@@ -1,25 +1,21 @@
 @use '../utils/mixins' as *;
+@use '../utils/var' as *;
 
-.footer--explore {
-  margin-top: 120px;
+.footer {
+  position: sticky;
+  z-index: 1;
+  bottom: 0;
+
+  height: $footer-height-sm;
+
+  background-image: url('../images/footer-img.jpg');
+  background-size: cover;
 
   @include on-tablet {
-    margin-top: 102px;
+    height: $footer-height-md;
   }
 
   @include on-desktop {
-    margin-top: 164px;
+    height: $footer-height-lg;
   }
-}
-
-.footer {
-  width: 100%;
-  aspect-ratio: 1260 / 555;
-
-  background-image: url(../images/footer-img.jpg);
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
 }

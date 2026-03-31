@@ -23,14 +23,20 @@
     display: flex;
     justify-content: center;
     gap: $p-5;
+    overflow: hidden;
   }
 
   &__image {
     min-width: 130px;
-
     margin-bottom: $p-4;
     object-fit: cover;
     flex-grow: 1;
+    transition: transform .4s ease;
+    
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 
   &__feature-name {

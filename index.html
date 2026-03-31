@@ -39,6 +39,9 @@
   <!-- #endregion -->
   <body>
     <!-- #region header -->
+     <div class="footer-relative">
+
+     
     <header class="header">
       <div class="top-bar top-bar__menu">
         <a
@@ -51,7 +54,7 @@
           />
         </a>
         <div class="header__menu">
-          <a class="icon icon--contacts" href="#contacts">
+          <a class="icon icon--contacts" href="tel:+1 234 555-55-55">
             <img
               src="src/images/Icon-Phone-call.svg"
               href="#contacts"
@@ -156,10 +159,11 @@
           </div>
           <h2 class="bikes-compare__card-title heading">Compare Bikes</h2>
           <div class="bikes-compare__container">
-            <article class="bike-card">
+            <article class="bikes-card">
               <img
                 src="./src/images/Sporty.jpg"
                 alt="Sporty Bike Image"
+                class="bikes-compare__image"
               />
               <h3 class="bikes-compare__heading heading--bold">Sporty 4</h3>
               <p class="bikes-compare__description description">
@@ -177,6 +181,7 @@
               <img
                 src="./src/images/rideInTown.jpg"
                 alt="Ride in Town Bike Image"
+                class="bikes-compare__image"
               />
               <h3 class="bikes-compare__heading heading--bold">
                 Ride in town ST
@@ -196,6 +201,7 @@
               <img
                 src="./src/images/agileRide.png"
                 alt="Agile Ride 3 bike Image"
+                class="bikes-compare__image"
               />
               <h3 class="bikes-compare__heading heading--bold">Agile ride 3</h3>
               <p class="bikes-compare__description description">
@@ -298,7 +304,7 @@
           </div>
         </div>
       </section>
-    </main>
+    
 
     <section
       class="contact contact--external"
@@ -401,7 +407,8 @@
         </div>
       </div>
     </section>
-
+  </main>
+</div>
     <footer class="footer footer--explore"></footer>
   </body>
 </html>
