@@ -13,11 +13,7 @@
   align-items: stretch;
 
   @include on-tablet {
-    height: 630px;
-  }
-
-  @include on-desktop {
-    height: 712px;
+    height: 100vh;
   }
 
   &-heading {
