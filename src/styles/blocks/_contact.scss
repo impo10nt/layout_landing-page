@@ -1,11 +1,9 @@
 @use '../utils/mixins' as *;
 @use '../utils/var' as *;
 
-
-
 .contact {
   @include content-padding-inline;
-  
+
   &__container {
     width: 280px;
     margin: 0 auto;
@@ -68,7 +66,7 @@
     background-color: #fff;
 
     resize: none;
-    
+
     @include on-tablet {
       width: 288px;
     }
@@ -111,7 +109,6 @@
   &__info-value:last-child {
     margin-bottom: 0;
   }
-  
 }
 
 .contact--external {
